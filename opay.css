@@ -1,0 +1,168 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+  .arrow-down {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin-right: 0;
+    }
+    nav ul li a {
+      padding: 10px;
+    }
+    nav ul li ul {
+      position: relative;
+      background-color: #fcf7f7;
+      padding: 10px;
+      border: 1px solid #f9f8f8;
+    }
+  }
+  nav {
+    background-color: #f9f7f7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+  }
+  .desktop-nav {
+    display: block;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+  }
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  
+  .cookie-consent {
+    transition: opacity 0.5s;
+  }
+    
+  .navbar-brand {
+    margin-right: 20px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    background-image: url('./background\ image\ 1.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .p1 {
+    width: 30%;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .h1 {
+    width: 30%;
+    margin-top: 2px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  .p1 {
+    color:#4D4C88;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: justify;
+  }
+  
+  
+  
