@@ -1,0 +1,301 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1E085A;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container .logo {
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-list a:hover {
+    color: #ffcc00;
+}
+
+/* About Us section */
+.about-us-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-section h1 {
+    font-size: 36px;
+    color: #1E085A;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Align image and text in zigzag pattern */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-section, .image-section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.text-section {
+    margin-right: 20px;
+}
+
+.about-image {
+    max-width: 400px;
+    height: auto;
+    flex: 1;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Company Values Section */
+.values-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.values-section h2 {
+    font-size: 32px;
+    color: #1E085A;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1E085A;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-info {
+    flex: 1;
+    text-align: left;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Adjust the white containers and equal border alignment */
+.text-section, .image-section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure equal borders for text and image containers */
+.text-section, .image-section {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+}
+/* About Us section */
+.about-us-section {
+    position: relative;
+}
+
+.green-background {
+    background-color: #00a859;
+    height: 300px;
+    width: 100%;
+}
+
+.about-container {
+    position: relative;
+    max-width: 1200px;
+    margin: -150px auto 50px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image {
+    max-width: 400px;
+    height: auto;
+    flex: 1;
+}
+
+/* Company Values Section */
+/* Company Values Section */
+.values-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between rows */
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between text and image cells */
+}
+
+.flex-row.reverse {
+    flex-direction: row-reverse; /* This ensures zigzag pattern */
+}
+
+.cell {
+    width: 50%; /* Ensure both image and text take up 50% of the row */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-cell {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cell img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a shadow around the image */
+}
