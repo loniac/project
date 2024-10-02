@@ -1,0 +1,386 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+/*.navbar {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: #504F3A;
+    font-size: 18px;
+    padding: 10px;
+} */
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-business-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.business-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #37266F; /* Business text color */
+    margin-left: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: #3a5046; /* Link text color */
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-list a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #00a859; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* H1 section */
+.custom-h1 {
+    text-align: center;
+    margin-top: 1.5in;
+}
+
+.custom-h1 h1 {
+    font-size: 2.5rem;
+    color: #210F60;
+}
+
+.omnichannel-text {
+    color: #1DCF9F;
+}
+
+/* Line under H1 */
+.line {
+    margin: 0 1in;
+    height: 2px;
+    background-color: #A9A9A9;
+    margin-top: 10px;
+}
+
+/* Container for text and images */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+/* Text Section */
+.text-section {
+    width: 50%;
+}
+
+.header {
+    color: #210F60;
+    font-size: 1.8rem;
+}
+
+.sub-header {
+    color: #210F60;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.bullet-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/*.bullet-list li {
+    position: relative;
+   /padding-left: 20px; 
+    margin-bottom: 10px;
+}
+
+.bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: hsla(120, 66%, 45%, 0.866);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+*/
+.bullet-list {
+    list-style: none;
+    padding-left: 20px; /* Adds space for the bullet */
+}
+
+.bullet-list li {
+    position: relative; /* Make the li the reference point for the ::before pseudo-element */
+    margin-bottom: 10px;
+    padding-left: 20px; /* Pushes the text to the right to make space for the bullet */
+}
+
+.bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; /* Vertically centers the bullet */
+    transform: translateY(-50%); /* Ensures bullet is perfectly centered */
+    width: 10px;
+    height: 10px;
+    background-color: hsla(120, 66%, 45%, 0.866); /* Your green bullet color */
+    border-radius: 50%; /* Makes the bullet circular */
+}
+
+/* Image Section */
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+
+.header-section {
+    text-align: center;
+    background-color: hwb(252 94% 4%); /* Header color */
+    color:#210F60;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-section h1 {
+    font-size: 36px;
+}
+
+/* Image Grid */
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 30%; /* Adjust the width as needed */
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px; /* Position text near the bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+   /* background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better contrast */
+    padding: 10px;
+}
+
+.image-text h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.image-text p {
+    font-size: 14px;
+}
+.lolo{
+    margin-top: 5px;
+    font-size: larger;
+}
+.apply{
+    margin-top: 20px;
+    font-size: 50px;
+    color: #00a859;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+
+/* Container for the header */
+.header-container {
+    margin-top: 1.5in; /* Adjust spacing from the top if needed */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+}
+
+/* Main header style */
+.custom-header {
+    font-size: 48px; /* Big header */
+    line-height: 1.2; /* Adjusts line spacing */
+    color: #210F60; /* Default color for the text */
+    font-weight: bold;
+    position: relative;
+}
+
+/* Highlight "Professional Dashboard" with a different color */
+.custom-header .highlight-text {
+    color: #1DCF9F; /* Different color for "Professional Dashboard" */
+}
+
+/* Custom paragraph style to align the "i" in Visualizations under "Get" */
+.custom-header::after {
+    content: " "; /* Invisible content to help with positioning */
+    display: block;
+    width: 0px;
+    height: 0px;
+    margin-left: 40px; /* Adjust this to align the "i" correctly */
+    padding-top: 10px;
+}
+/* Container to hold the header */
+.header-container {
+    text-align: center; /* Centers the header */
+    margin-top: 50px;   /* Adds some space above */
+}
+
+/* Main header styling */
+.main-header {
+    font-size: 48px;      /* Big header size */
+    color: #210F60;       /* Header color */
+    font-weight: bold;    /* Makes the header bold */
+    line-height: 1.2;     /* Adjust line height */
+    margin-bottom: 20px;  /* Space below the header */
+}
+/* Grid layout */
+.icon-grid-section {
+    padding: 20px; /* Add some padding around the section */
+}
+
+.grid-container {
+    display: flex;              /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;       /* Center items vertically */
+    flex-wrap: wrap;           /* Allow wrapping for smaller screens */
+}
+
+.grid-item {
+    flex: 1;                   /* Each grid item takes equal space */
+    max-width: 23%;            /* Limit width to prevent overflow */
+    text-align: center;        /* Center text below icons */
+    margin: 0 10px;           /* Add horizontal spacing between items */
+}
+
+.icon {
+    max-width: 100%;           /* Ensure icons fit within the grid item */
+    height: auto;              /* Maintain aspect ratio */
+}
+.insights-header {
+    color: #210F60; /* Text color */
+    font-size: 36px; /* Adjust font size as needed */
+    text-align: center; /* Center the text */
+    margin-top: 50px; /* Add space from the top */
+    font-weight: bold; /* Make the text bold */
+}
+.insights-text {
+    color: #575781; /* Text color */
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: center; /* Center the text */
+    padding-left: 1in; /* Left padding */
+    padding-right: 1in; /* Right padding */
+    margin-top: 20px; /* Space between header and paragraph */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.contact-button {
+    background-color: #00a859; /* Green background color */
+    width: 375px; /* Width of iPhone 7 (approximately) */
+    height: 2.32cm; /* Height of the button */
+    border-radius: 30px; /* Rounded corners for a pill-shaped button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size for the text */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.button-icon {
+    width: 20px; /* Adjust icon size */
+    height: auto;
+}
+

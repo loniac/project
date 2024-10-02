@@ -131,38 +131,433 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
-  .container {
-    background-image: url('./background\ image\ 1.jpg');
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .p1 {
-    width: 30%;
-    padding: 20px;
-    color: #fff;
-    text-align: left;
+    .container {
+      background-image: url('./background ');
+      background-size: cover;
+      background-position: center;
+      width: 100vw; /* Use viewport width to stretch background */
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      box-sizing: border-box;
+      margin: 0; /* Ensure no margin affects the container's width */
   }
   
-  .h1 {
-    width: 30%;
-    margin-top: 2px;
-    padding: 20px;
-    color: #fff;
-    text-align: left;
+  .text-content {
+      width: 50%;
+      color: #fff;
+      text-align: left;
+      padding: 20px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adds text shadow for readability */
   }
-  .p1 {
+  
+  .text-content h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #210F60; /* H1 color change as per your requirement */
+  }
+  
+  .text-content p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #fff;
+  }
+  
+  .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .logos img {
+      width: 120px;
+      margin: 10px 0;
+  }
+  
+  .lolo{
     color:#4D4C88;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    text-align: justify;
+  }
+
+  .green-container {
+    background-color: #1DC99B;
+    height: 18cm;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1cm;
+    position: relative;
+  }
+  
+  .left-content {
+    margin-left: 0.8cm;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem; /* Increased text size */
+    animation: moveUp 2s ease-out;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align text vertically */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  p {
+    margin-top: 10px;
+    line-height: 1.5em;
+  }
+  
+  .right-image {
+    display: flex;
+    align-items: center; /* Align image vertically with the text */
+    justify-content: flex-end; /* Push the image to the far right */
+    width: 45%; /* Ensure it doesn't overlap the text */
+  }
+  
+  .right-image img {
+    max-width: 90%; /* Increased size of the image */
+    border-radius: 1cm;
+  }
+  
+  /* Animation */
+  @keyframes moveUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .white-container {
+    background-color: white;
+    height: 18cm;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1cm;
+    position: relative;
+  }
+  
+  .left-image {
+    display: flex;
+    align-items: center; /* Align image vertically */
+    justify-content: flex-start; /* Push the image to the far left */
+    width: 45%;
+  }
+  
+  .left-image img {
+    max-width: 70%;
+    border-radius: 1cm;
+  }
+  
+  .right-content {
+    margin-left: 0.8cm;
+    color: #210F60; /* Text color */
+    font-weight: bold;
+    font-size: 2rem; /* Increased text size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align text vertically */
+    max-width: 50%;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  p {
+    margin-top: 10px;
+    line-height: 1.5em;
+  }
+  .right-container {
+    background-color: #EDEDED;
+    height: 18cm;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1cm;
+    position: relative;
+  }
+  
+  .right-content {
+    text-align: right;
+    max-width: 40%;
+    padding: 10px;
+    margin-left:auto;
+  }
+  
+  .icon-image {
+    margin-right: 4cm;
+    max-width: 40%;
+    display: block;
+  }
+  
+  p {
+    color: #3F377B;
+    margin-top: 1cm;
+    line-height: 1.5em;
+    font-size: 1.5rem;
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .logos {
+    display: flex;
+    
+    gap: 1cm;
+    margin-top: 1cm;
+  }
+  
+  .logos img {
+    max-width: 10%;
+  }
+    
+
+
+
+  .testimonial-container {
+    background-color: #FFFFFF;
+    padding: 2cm;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #210F60;
+    margin-bottom: 1cm;
+  }
+  
+  .video-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .video-wrapper {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    gap: 1cm; /* Reduced gap between videos */
+  }
+  
+  .video-item {
+    flex: 0 0 auto; /* Prevents the video items from shrinking */
+    width: 250px; /* Adjust width as needed */
+    height: 400px; /* Increased height for thumbnails */
+    text-align: center;
+    border-radius: 0.5cm;
+  }
+  
+  .customer-video {
+    width: 100%;
+    height: 80%; /* Adjust height to fit the item */
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.3s ease; /* Added transform for scaling */
+  }
+  
+  .customer-video:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .description {
+    color: #210F60;
+    font-size: 1rem; /* Increased font size */
+    margin-top: 0.2cm;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight background for contrast */
+    padding: 0.2cm; /* Added padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .person-name {
+    color: #210F60;
+    font-size: 0.9rem; /* Increased font size */
+    margin-top: 0.1cm;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    color: green;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left-arrow {
+    left: 1cm; /* Move closer to the left edge */
+  }
+  
+  .right-arrow {
+    right: 1cm; /* Move closer to the right edge */
+  }
+  
+  /* Hide scrollbar */
+  .video-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cookie-consent-container {
+    background-color: #1DC99B;
+    color: white;
+    font-size: 0.8rem; /* Reduced font size for a more compact look */
+    height: 60px; /* Adjust the height as needed */
+    width: 100%; /* Take full width */
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Side padding */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it is on top of other content */
+  }
+  
+  .cookie-text {
+    margin: 0; /* Remove margin */
+    flex-grow: 1; /* Allow text to grow and take available space */
+  }
+  
+  .cookie-buttons {
+    display: flex; /* Flexbox for buttons */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .cookie-button {
+    background-color: white; /* Button background */
+    color: #1DC99B; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .cookie-button:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+  }
+  
+  .accept-button {
+    background-color: #37266F; /* Deep blue for the Accept All button */
+    color: white; /* White text for contrast */
+  }
+  
+  .accept-button:hover {
+    background-color: #504F3A; /* Darker on hover */
   }
   
   
+  .text-image-container {
+    background-color: #1DC99B; /* Container background color */
+    display: flex; /* Use flexbox for layout */
+    padding: 20px; /* Padding for the container */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between;
+  }
   
+  .image-container {
+    margin-right: 40px; /* Increase space between images and text */
+  }
+  
+  .side-image {
+    display: block; /* Ensure images are block elements */
+    margin-bottom: 20px; /* Increase space between images */
+    width: 600px; /* Increase width of images */
+    height: 250px; /* Maintain aspect ratio */
+    padding-left: 10px;
+  }
+  
+  .text-container {
+    color: white; /* Text color */
+    padding: 20px;
+  }
+  
+  .main-title {
+    color: #210F60; /* H1 color */
+    margin-bottom: 10px; /* Add space below H1 */
+  }
+  
+  .sub-title,
+  .third-title {
+    color: white; /* Other titles color */
+    margin-bottom: 5px; /* Add space below titles */
+  }
+  
+  .normal-text {
+    color: white; /* Normal text color */
+    margin-bottom: 10px; /* Add space below normal text */
+  }
+  
+  .text-video-container {
+    background-color: white; /* Container background color */
+    display: flex; /* Use flexbox for layout */
+    padding: 20px; /* Padding for the container */
+    align-items: flex-start; /* Align items at the start */
+  }
+  
+  .text-container {
+    margin-right: 40px; /* Increase space between text and videos */
+    color: #210F60; /* Text color */
+  }
+  
+  .main-title {
+    color: #210F60; /* H1 color */
+    margin-bottom: 10px; /* Add space below H1 */
+  }
+  
+  .normal-text {
+    margin-bottom: 10px; /* Add space below normal text */
+  }
+  
+  .video-container {
+    display: flex; /* Use flexbox for video layout */
+    flex-direction: column; /* Stack videos vertically */
+    width: 60%;
+  }
+  
+  .customer-video {
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Set a fixed height for the videos */
+    margin-bottom: 20px; /* Space between videos */
+    object-fit: cover; /* Ensure videos cover the area without distortion */
+  }
+  
+  .customer-video:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .full-width-video-container {
+    background-color: #D4D4D4; /* Container background color */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Centering video */
+  }
+  
+  .full-width-video {
+    width: 100%; /* Full width of the container */
+    height: 600px; /* Adjust height */
+    display: block;
+    object-fit: cover; /* Ensure video covers the entire area */
+    border: none;
+  }
+  
+  .p1{
+    text-align: left;
+    width: 700px;
+    font:  5px;
+    font-weight: 300;
+    
+  }
